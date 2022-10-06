@@ -1,0 +1,14 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+
+.formContainer a {
+  text-decoration: none;
+}
+
+.redirect-login {
+  margin-top: 15px;
+  color: #2c86c7;
+}

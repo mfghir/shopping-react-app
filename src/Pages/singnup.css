@@ -1,0 +1,13 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+.formContainer a {
+  text-decoration: none;
+}
+
+.redirect-signup {
+  margin-top: 15px;
+  color: #2c86c7;
+}

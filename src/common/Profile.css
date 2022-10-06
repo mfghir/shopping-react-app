@@ -1,0 +1,46 @@
+.profile-container {
+    padding: 50px 100px;
+}
+
+.profile-container h2 {
+    display: flex;
+    align-items: center;
+}
+
+/* .profile-container ul {} */
+
+.profile-container ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container ul li svg {
+    font-size: 25px;
+}
+
+.profile-container ul li strong {
+    margin-right: 10px;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+.profile-container a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    margin-top: 20px;
+    color: #2c86c7;
+}
+
+.profile-container a>svg {
+    margin-left: 10px;
+    font-size: 30px;
+}

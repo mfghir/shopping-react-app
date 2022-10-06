@@ -1,0 +1,129 @@
+.cartList-container {
+    width: 45%;
+    min-height: 300px;
+    height: 300px;
+
+    position: absolute;
+    top: 75px;
+    right: 5%;
+
+    padding: 20px;
+    background: #ffffff;
+    z-index: 2;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* border: 2px solid silver; */
+
+    overflow-y: scroll;
+    color: #444;
+}
+
+.cartList-item {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+    width: 100%;
+    margin: 20px 0;
+
+    display: grid;
+
+    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
+    grid-template-columns: 50px auto 80px 60px;
+    grid-column-gap: 3rem;
+    align-items: center;
+
+    /* grid-row-gap: 5rem; */
+}
+
+.cartList-items {
+    padding: 0 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartList-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.cartList-item>.btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cartList-item>.btns>span {
+    margin: 0 10px;
+}
+
+.cartList-item>.btns>button {
+    padding: 2px 5px;
+    outline: none;
+    border-radius: 7px;
+
+    border: 2px solid #2c86c7;
+    color: #2c86c7;
+    background: #ffffff;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cartList-item>.btns>button:nth-of-type(1) {
+    background: #2c86c7;
+    color: #ffffff;
+}
+
+.cartList-total {
+    border-top: 2px solid silver;
+    padding: 20px;
+}
+
+.cartList-total>p {
+    margin-top: 20px;
+}
+
+.cartList-total button {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cartList-total button,
+.empty-basket button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+
+    background: #2c86c7;
+    color: #ffffff;
+    font-size: 14px;
+
+    transition: .4s;
+    cursor: pointer;
+}
+
+.cartList-total button:hover,
+.empty-basket button:hover {
+    background: #145f96;
+}
+
+.cartList-total>.btn-clear {
+    background: #ffffff;
+    color: #2c86c7;
+    border: 2px solid #2c86c7;
+
+    margin-left: 20px;
+}
+
+.cartList-total>.btn-clear:hover {
+    border: 2px solid #145f96;
+    color: #ffffff;
+}

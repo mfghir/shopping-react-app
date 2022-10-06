@@ -1,0 +1,151 @@
+.cart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.cart-container>h3 {
+    margin-top: 25px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.cart-container:hover>h3 {
+    margin-top: 25px;
+    z-index: 1;
+    opacity: 1;
+}
+
+.cart-container>p {
+    margin: 10px 0;
+}
+
+.cart-container img {
+    width: 100%;
+}
+
+.cart-emoji {
+    position: absolute;
+    top: -80px;
+    right: 10px;
+
+    cursor: pointer;
+    z-index: 1;
+    font-size: 25px;
+
+    transition: .4s;
+}
+
+.cart-emoji span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+
+
+    background: #ffffff;
+    border-radius: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    opacity: 0;
+    transition: .4s;
+}
+
+.cart-emoji svg {
+    stroke: #444;
+}
+
+.cart-container:hover .cart-emoji {
+    top: 10px;
+}
+
+.cart-container:hover .cart-emoji>span {
+    opacity: 1;
+}
+
+.cart-emoji>span:hover {
+    background: #444;
+}
+
+.cart-emoji>span:hover svg {
+    stroke: #ffffff;
+}
+
+.cart-container>.btns {
+    /* justify-content: space-evenly; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin: 20px 0;
+    transition: .4s;
+
+    padding: 0 20px;
+}
+
+.cart-container:hover>.btns {
+    margin: 20px 0;
+    opacity: 1;
+    z-index: 1;
+
+}
+
+
+.cart-container .btns>strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #2c86c7;
+}
+
+.cart-container .btns button {
+    outline: none;
+    border: none;
+    background: none;
+
+    font-size: 26px;
+    cursor: pointer;
+
+    /* padding: 5px 15px; */
+    /* border-radius: 7px; */
+    /* margin: 0 10px; */
+
+    /* border: 2px solid #2c86c7;
+    background: #2c86c7;
+    color: #ffffff; */
+
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+.cart-container .btns button span {
+    transition: .4s;
+}
+
+.cart-container .btns .btn-one {
+    color: #2c86c7;
+}
+
+.cart-container .btns>.btn-two:nth-of-type(1) {
+    font-size: 18px;
+    margin-right: -5px;
+}
+
+.cart-container .btns .btn-two:hover {
+    /* background: white; */
+    color: #2c86c7;
+}
